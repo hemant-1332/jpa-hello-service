@@ -7,15 +7,15 @@ import lombok.ToString;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "sn_properties")
+@Table(name = "configuration")
 @Getter
 @Setter
 @ToString
 public class Configuration {
 
     @Id
-    @SequenceGenerator(name = "sn_properties_sequence", sequenceName = "sn_properties_sequence")
-    @Column(name = "pk_property")
+    @SequenceGenerator(name = "configuration_sequence", sequenceName = "configuration_sequence")
+    @Column(name = "id")
     private int pk;
 
     @Column(name = "key", nullable = false, unique = true)

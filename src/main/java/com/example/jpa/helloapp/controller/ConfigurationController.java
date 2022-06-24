@@ -38,7 +38,7 @@ public class ConfigurationController {
             if (list.isEmpty()) {
                 return new ResponseEntity<>(null, HttpStatus.NO_CONTENT);
             }
-            log.info("Found properties list size : {}", list.size());
+            log.info("Found config list size : {}", list.size());
             return new ResponseEntity<>(list, HttpStatus.OK);
 
         } catch (Exception e) {
@@ -79,7 +79,7 @@ public class ConfigurationController {
                 if (list.isEmpty()) {
                     output.setResult(new ResponseEntity<>(null, HttpStatus.NO_CONTENT));
                 }
-                log.info("Found properties list size : {}", list.size());
+                log.info("Found config list size : {}", list.size());
                 output.setResult(new ResponseEntity<>(list, HttpStatus.OK));
 
             } catch (Exception e) {
